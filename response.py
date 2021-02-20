@@ -14,18 +14,18 @@ import pandas as pd
 
 def response():
     
-    Age= input('Please enter your age:')
+    Age= input('Please enter your age - range of 20 and above:')
     while re.search('[0-9]',Age) is None:
         print('Make sure your age is in numbers') 
-        Age= input('Please enter your age:')
-    Annual_Premium = input('Please enter your desired Annual Premium:')
+        Age= input('Please enter your age - range of 20 and above:')
+    Annual_Premium = input('Please enter your desired Annual Premium - range of 2630 and more:')
     while re.search('[0-9]',Annual_Premium) is None:
         print('Make sure your Annual Premium is in numbers')
-        Annual_Premium = input('Please enter your desired Annual Premium:')
-    Vintage = input('How many day have you been associated with ouur company :')
+        Annual_Premium = input('Please enter your desired Annual Premium - range of 2630 and more:')
+    Vintage = input('How many day have you been associated with our company - up to 300 days :')
     while re.search('[0-9]',Vintage) is None:
         print('Make sure your Vintage is in numbers')
-        Vintage = input('How many day have you been associated with ouur company :')
+        Vintage = input('How many day have you been associated with our company - up to 300 days :')
 
     Gender = input('Please enter your gender, Male=1, Female=0 :')
     while re.search('[0-1]',Gender) is None:
@@ -47,10 +47,10 @@ def response():
         print('Make sure that your entry for vehicle damage is either 1 or 0')
         Vehicle_Damage = input('Has your vehicle been damaged before? Yes=1, No=0 :')
 
-    VA_1_2_year = input('Is your vehicle 1-2 years old? Yes=1, No=0:')
+    VA_1_2_year = input('Is your vehicle 1-2 years old? Yes=1, No=0, if your answer is Yes, then please choose No in the next question:')
     while re.search('[0-1]',VA_1_2_year) is None:
         print('Make sure your entry is either 1 or 0')
-        VA_1_2_year = input('Is your vehicle 1-2 years old? Yes=1, No=0:')
+        VA_1_2_year = input('Is your vehicle 1-2 years old? Yes=1, No=0, if your answer is Yes, then please choose No in the next question:')
 
     VA_below_1_year = input('Is your vehicle less than 1 year old? Yes=1, No=0: ')
     while re.search('[0-1]',VA_below_1_year) is None:
